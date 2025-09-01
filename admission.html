@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Full Name: John Berceles
+    Section: CS - 202
+    Activity: School Website
+    Date: 08/21/2025
+    -->
+    
+    
+    <title>Our Lord's Angel School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/logs.png" type="image/png">
+    <link rel="icon" href="img/logs.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/logs.png">
+    <link rel="icon" sizes="192x192" href="img/logs.png">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html">
+                <img src="img/logs.png" alt="Our Lord's Angel School Logo">
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html" class="active">Admissions</a></li>
+                <li><a href="application.html">Online Application</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="hero">
+            <img src="img/hero.png" alt="Admission">
+        </div>
+
+<main>
+    <!-- Mobile View -->
+    <div class="mobile">
+        <h3>Available Programs</h3>
+        <p>Nursery - Morning & Afternoon Sessions</p>
+        <p>Kinder - Morning & Afternoon Sessions</p>
+        <p>Grade School (Grades 1-6) - AM/PM</p>
+        <p>Junior High School (Grades 7-10)</p>
+        <p>Senior High School (STEM, ABM, HUMSS)</p>
+    </div>
+
+    <!-- Desktop View -->
+    <div class="desktop">
+        <table>
+            <caption>Available Programs & Schedules</caption>
+            <tr>
+                <th>Level</th>
+                <th>Track / Strand</th>
+                <th>Schedule</th>
+                <th>Room</th>
+                <th>Adviser</th>
+            </tr>
+            <tr>
+                <td>Nursery</td>
+                <td>---</td>
+                <td>AM / PM</td>
+                <td>Room A</td>
+                <td>Ms. Cruz</td>
+            </tr>
+            <tr>
+                <td>Kinder</td>
+                <td>---</td>
+                <td>AM / PM</td>
+                <td>Room B</td>
+                <td>Mr. Reyes</td>
+            </tr>
+            <tr>
+                <td>Grade School</td>
+                <td>Grades 1-6</td>
+                <td>Regular Class Hours</td>
+                <td>Main Building</td>
+                <td>Faculty Team</td>
+            </tr>
+            <tr>
+                <td>Junior High</td>
+                <td>Grades 7-10</td>
+                <td>Regular Class Hours</td>
+                <td>Main Building</td>
+                <td>Faculty Team</td>
+            </tr>
+            <tr>
+                <td>Senior High</td>
+                <td>STEM, ABM, HUMSS</td>
+                <td>Regular Class Hours</td>
+                <td>Annex</td>
+                <td>Faculty Team</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Application Form -->
+    <section id="application-form">
+        <h2>Online Application Form</h2>
+        <form action="submit_application.php" method="post">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="gradelevel">Grade Level Applying For:</label><br>
+            <select id="gradelevel" name="gradelevel" required>
+                <option value="">-- Select --</option>
+                <option value="Nursery">Nursery</option>
+                <option value="Kinder">Kinder</option>
+                <option value="Grade School">Grade School</option>
+                <option value="Junior High">Junior High</option>
+                <option value="Senior High">Senior High</option>
+            </select><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contact">Contact Number:</label><br>
+            <input type="tel" id="contact" name="contact" required><br><br>
+
+            <label for="message">Additional Notes:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </section>
+</main>
+
+
+        <footer>   
+            <p>&copy; Copyright 2025. All rights reserved. Created by John Berceles</p>
+            <a href="mailto:ourlordsangelsschool@gmail.com">ourlordsangelschool.edu.ph</a>
+        </footer>
+    </div>
+</body>
+</html>
