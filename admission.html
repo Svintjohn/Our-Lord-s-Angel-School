@@ -29,18 +29,27 @@
         </header>
 
         <nav>
-            <ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="admission.html" class="active">Admissions</a></li>
+                <li><a href="admission.html">Admissions</a></li>
                 <li><a href="application.html">Online Application</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
 
+        
+
         <div id="hero">
             <img src="img/hero.png" alt="Admission">
         </div>
+
+
 
 <main>
     <!-- Mobile View -->
@@ -139,5 +148,14 @@
             <a href="mailto:ourlordsangelsschool@gmail.com">ourlordsangelschool.edu.ph</a>
         </footer>
     </div>
+    
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-list');
+
+        menu.addEventListener('click', function() {
+            menuLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
